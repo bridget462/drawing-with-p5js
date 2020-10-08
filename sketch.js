@@ -1,10 +1,16 @@
-function setup() {
-  createCanvas(800, 500);
-  print("setup");
+let bg;
+
+function preload() {
+  bg = loadImage("assets/test-background-image.jpg");
 }
 
-function draw() {
-  background(220);
-  rect(100, 200, 75, 125);
-  print("draw");
+function setup() {
+  createCanvas(1920, 1080);
+  background(bg);
+}
+
+function mouseDragged() {
+  noStroke();
+  fill("rgba(255, 0, 0, 1)");
+  ellipse(mouseX, mouseY, 16, 16);
 }
