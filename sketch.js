@@ -1,7 +1,8 @@
-let bg;
+let canvas;
 
 function setup() {
-  createCanvas(1920, 1080);
+  canvas = createCanvas(1920, 1080);
+  canvas.position(0, 0);
   clearCanvas();
   const clearBtn = createButton("reset");
   clearBtn.mousePressed(clearCanvas);
@@ -9,7 +10,7 @@ function setup() {
 
 function clearCanvas() {
   clear();
-  background("grey");
+  background("rgba(255, 255, 255, 0.2)");
 }
 
 function mouseDragged() {
