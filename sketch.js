@@ -14,7 +14,7 @@ function clearCanvas() {
 }
 
 function mouseDragged() {
-  noStroke();
-  fill("rgba(0, 255, 0, 1)");
-  ellipse(mouseX, mouseY, 16, 16);
+  strokeWeight(4);
+  stroke("salmon");
+  line(pmouseX, pmouseY, mouseX, mouseY);
 }
