@@ -6,11 +6,17 @@ function preload() {
 
 function setup() {
   createCanvas(1920, 1080);
-  background(bg);
+  clearCanvas();
+  const clearBtn = createButton("reset");
+  clearBtn.mousePressed(clearCanvas);
+}
+
+function clearCanvas() {
+  clear();
 }
 
 function mouseDragged() {
   noStroke();
-  fill("rgba(255, 0, 0, 1)");
+  fill("rgba(0, 255, 0, 1)");
   ellipse(mouseX, mouseY, 16, 16);
 }
