@@ -18,3 +18,7 @@ function mouseDragged() {
   stroke("salmon");
   line(pmouseX, pmouseY, mouseX, mouseY);
 }
+
+function keyPressed() {
+  clearCanvas();
+}
