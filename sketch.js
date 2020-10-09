@@ -1,9 +1,5 @@
 let bg;
 
-function preload() {
-  bg = loadImage("assets/test-background-image.jpg");
-}
-
 function setup() {
   createCanvas(1920, 1080);
   clearCanvas();
@@ -13,6 +9,7 @@ function setup() {
 
 function clearCanvas() {
   clear();
+  background("grey");
 }
 
 function mouseDragged() {
